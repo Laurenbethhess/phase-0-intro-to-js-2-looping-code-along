@@ -1,15 +1,10 @@
-const names = ["Lisa", "Kaitlin", "Jan"];
-
-
-function writeCards() {
-  const birthday = [];
-  for (let i = 0; i < names.length; i++) {
-    birthday.push(`Thank you, ${names[i]}, for the wonderful surprise gift!`)
+function writeCards(array, event) {
+  let message = [];
+  for (let i = 0; i < array.length; i++) {
+    message.push(`Thank you, ${array[i]}, for the wonderful ${event} gift!`)
   }
-    return birthday;
+    return message;
 }
-
-writeCards();
 
 function countDown() {
     let countDown = 10;
@@ -17,5 +12,3 @@ function countDown() {
     console.log(countDown--);
     } 
   }
-  
-  countDown ();
